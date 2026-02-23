@@ -2,7 +2,7 @@ export const portfolioData = {
   "profile": {
     "name": "高远",
     "title": "叙事策划 | 独立游戏开发者",
-    "subtitle": "前超参数科技游戏xAI项目主策划 | 现专注互动叙事设计与研究",
+    "subtitle": "前·超参数科技「游戏xAI」项目主策划 | 现·专注「互动叙事」设计与研究",
     "studio": "Odd Choice"
   },
   "sections": [
