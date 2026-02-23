@@ -1,63 +1,57 @@
 export const portfolioData = {
   "profile": {
     "name": "高远",
-    "title": "互动叙事策划 | 独立游戏开发者",
-    "subtitle": "前超参数科技AI游戏项目主策划 | 专注互动叙事 × AI方向的探索者",
+    "title": "叙事策划 | 独立游戏开发者",
+    "subtitle": "前超参数科技游戏xAI项目主策划 | 现专注互动叙事设计与研究",
     "studio": "Odd Choice"
   },
   "sections": [
     {
       "id": "part1",
-      "title": "1️⃣ 不断尝互动叙事 x AI 催生的新体验",
+      "title": "1️⃣ 互动叙事 x AI方向探索",
       "description": "我完成过多款 LLM 游戏原型，关注点不是“聊天”，而是结构控制：\n- 状态机 + 上下文分层，约束对话方向\n- 目标导向信息交换，避免跑题\n- 情绪与信息节奏系统，控制叙事密度",
       "quoteTitle": "我关心的问题是",
-      "quote": "AI时代的内容形态/故事载体是怎样的？",
+      "quote": "AI能为互动叙事带来哪些的新体验？",
       "projects": [
         {
-          "name": "《未知号码》",
-          "desc": "状态机 + 上下文分层控制 NPC 主动推进剧情，避免对话跑题。",
+          "name": "《号码本》一款基于LLM的ARG demo",
+          "desc": "状态机 + 上下文分层控制 NPC 主动推进剧情，平衡玩家的主动性和自由度，尝试解决同类游戏中节奏松散的问题。",
           "type": "video",
-          "videoUrl": "https://www.youtube.com/embed/TKCXQVTqAfo?autoplay=1&mute=0"
-        },
-        {
-          "name": "《反诈模拟器》",
-          "desc": "伪装身份阻止电信诈骗，用分支剧情缓解纯对话玩法的压力。",
-          "type": "video",
-          "videoUrl": "https://www.youtube.com/embed/TKCXQVTqAfo?autoplay=1&mute=0" 
+          "videoUrl": "//player.bilibili.com/player.html?isOutside=true&aid=116120312877203&bvid=BV1pKfzBZELC&cid=36238396713&p=1&high_quality=1&autoplay=1"
         }
       ]
     },
     {
       "id": "part2",
-      "title": "2️⃣ 持续创作体会互动叙事的设计规律",
-      "description": "利用vibe coding和aigc工具，连续 21 周完成 21 个小型互动叙事实验。\n以SOLO+AI的方式参与gamejam活动获取作品反馈。\n\n探索方向包括：\n- 互动叙事产品的现状与爽点\n- 如何让玩法和叙事严丝合缝\n- 如何让玩家在选择中暴露价值取向",
+      "title": "2️⃣ 互动叙事的设计验证",
+      "description": "利用vibe coding和aigc工具，连续 21 周完成 21 个小型互动叙事实验。\n以SOLO+AI的方式参与gamejam活动获取作品反馈。\n\n验证内容包括：\n- 互动叙事产品的现状与爽点\n- 如何让玩法和叙事严丝合缝\n- 如何让玩家在选择中暴露价值取向",
       "quoteTitle": "我逐渐形成一个判断",
-      "quote": "游戏是互动叙事的幼年期。",
+      "quote": "游戏是互动叙事的幼年形态。",
       "projects": [
-        {
-          "name": "《无名旅人》",
-          "tag": "7天｜ThatGameJam#01",
-          "desc": "物品因 NPC 诠释而改变属性，玩家选择定义角色身份。",
-          "links": {
-            "video": "//player.bilibili.com/player.html?bvid=BV1kAc7zMEvr&page=1&high_quality=1&autoplay=1",
-            "play": "https://oddchoice.itch.io/nameless-traveler"
-          }
-        },
         {
           "name": "《奶酪信》",
           "tag": "48小时｜GlobalGameJam2026",
-          "desc": "二战信件审查官，涂黑的词语触发不同支线。",
+          "desc": "二战信件审查官，涂黑敏感词能避免泄露机密，但也会改变信件含义影响士兵命运。",
           "links": {
             "video": "//player.bilibili.com/player.html?bvid=BV1Vpc7zsEp2&page=1&high_quality=1&autoplay=1",
             "play": "https://oddchoice.itch.io/cheese-letters"
           }
         },
         {
-          "name": "《21 IN 1》",
+          "name": "《习作集》",
           "tag": "7天｜自由创作",
-          "desc": "从生活中获取灵感，每周落地一个玩法demo。",
+          "desc": "从生活中随机获取灵感，每周落地一个玩法demo，练习设计直觉和AI工具熟练度。",
           "links": {
             "play": "https://oddchoice.netlify.app/"
+          }
+        },
+        {
+          "name": "《无名旅人》",
+          "tag": "7天｜ThatGameJam#01",
+          "desc": "物品属性因 NPC 的观点而改变，玩家的选择决定了自己是谁，也决定了结局。",
+          "links": {
+            "video": "//player.bilibili.com/player.html?bvid=BV1kAc7zMEvr&page=1&high_quality=1&autoplay=1",
+            "play": "https://oddchoice.itch.io/nameless-traveler"
           }
         }
       ]
@@ -73,7 +67,7 @@ export const portfolioData = {
           "desc": "为发挥 RL-bot 特性定制的 2v2 策略动作游戏，玩家与 AI 组队对抗。\n同时负责其他实验性 Demo 的孵化。",
           "videoUrl": "//player.bilibili.com/player.html?bvid=BV16tcjzwEp5&page=1&high_quality=1&autoplay=1",
           "highlights": [
-            "在 LLM 崛起前探索 AI × Game 的交互形态",
+            "在 chatGPT moment 前探索 AI × Game 的交互形态",
             "孵化的 Demo 用于公司 B 轮融资"
           ]
         },
@@ -91,7 +85,7 @@ export const portfolioData = {
     }
   ],
   "footer": {
-    "statement": "如果你也对AI时代的全新游戏体验感兴趣，期待进一步交流！",
+    "statement": "如果你也对互动叙事的未来体验感兴趣，期待进一步交流！",
     "contact": [
       { "type": "Phone", "value": "18520891682" },
       { "type": "WeChat", "value": "sheredison" },

@@ -205,25 +205,27 @@ const App: React.FC = () => {
             </div>
           </AnimatedSection>
 
-          {/* Project Cards (Grid Layout similar to Section 2) */}
-          <div className="grid gap-6 md:grid-cols-2">
+          {/* Project Cards */}
+          <div className="flex flex-col gap-6">
             {sections[0].projects.map((project: Project, idx: number) => (
               <AnimatedSection key={idx} delay={idx * 100}>
-                <div className="bg-gray-50 border border-gray-100 p-6 rounded-xl flex flex-col justify-between hover:bg-white hover:shadow-md transition-all duration-300">
-                  <div>
-                     <h3 className="text-xl font-bold mb-3">{project.name}</h3>
-                     <p className="text-sm text-gray-600 leading-relaxed mb-6">
-                       {project.desc}
-                     </p>
-                  </div>
-                  
-                  <div className="flex gap-3 mt-auto">
-                      <button 
-                        onClick={() => openModal(project.videoUrl, project.name, 'video')}
-                        className="flex-1 flex items-center justify-center gap-2 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium hover:border-black transition-colors"
-                      >
-                        <Play size={14} /> Video
-                      </button>
+                <div className="bg-gray-50 border border-gray-100 rounded-xl overflow-hidden hover:bg-white hover:shadow-md transition-all duration-300">
+                  {project.videoUrl && (
+                    <div className="w-full aspect-video">
+                      <iframe
+                        src={project.videoUrl}
+                        className="w-full h-full"
+                        scrolling="no"
+                        frameBorder="0"
+                        allowFullScreen
+                      />
+                    </div>
+                  )}
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold mb-3">{project.name}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {project.desc}
+                    </p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -274,14 +276,26 @@ const App: React.FC = () => {
                     {sections[1].projects[2].desc}
                   </p>
                 </div>
-                <a 
-                  href={sections[1].projects[2].links?.play}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 py-2 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors shadow-sm"
-                >
-                  <Gamepad2 size={14} /> Play
-                </a>
+                <div className="flex gap-3">
+                  {sections[1].projects[2].links?.video && (
+                    <button
+                      onClick={() => openModal(sections[1].projects[2].links!.video, sections[1].projects[2].name, 'video')}
+                      className="flex-1 flex items-center justify-center gap-2 py-2 bg-white border border-gray-200 rounded-lg text-sm font-medium hover:border-black transition-colors"
+                    >
+                      <Play size={14} /> Video
+                    </button>
+                  )}
+                  {sections[1].projects[2].links?.play && (
+                    <a
+                      href={sections[1].projects[2].links?.play}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 py-2 bg-black text-white rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors shadow-sm"
+                    >
+                      <Gamepad2 size={14} /> Play
+                    </a>
+                  )}
+                </div>
               </div>
             </AnimatedSection>
 
