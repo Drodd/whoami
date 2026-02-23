@@ -11,7 +11,7 @@ export const portfolioData = {
       "title": "1️⃣ 互动叙事 x AI方向探索",
       "description": "我完成过多款 LLM 游戏原型，关注点不是“聊天”，而是结构控制：\n- 状态机 + 上下文分层，约束对话方向\n- 目标导向信息交换，避免跑题\n- 情绪与信息节奏系统，控制叙事密度",
       "quoteTitle": "我关心的问题是",
-      "quote": "AI能为互动叙事带来哪些的新体验？",
+      "quote": "AI能为互动叙事带来哪些新体验？",
       "projects": [
         {
           "name": "《号码本》一款基于LLM的ARG demo",
